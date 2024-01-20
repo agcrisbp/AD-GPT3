@@ -1,21 +1,30 @@
 'use strict';
 
-const { Client, Intents } = require("discord.js");
-const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
-const express = require("express");
-const app = express();
+const { Client, GatewayIntentBits, PermissionsBitField } = require('discord.js');
+require('dotenv').config();
 const fs = require('fs');
-
+const express = require("express");
+const path = require("path");
+const app = express();
 const data = fs.readFileSync("config.json");
 const obj = JSON.parse(data);
 
-const channelId = "CHANNEL_ID"; // Change CHANNEL_ID with ID Channel you want
- 
-client.login(obj["bot-settings"]["token"]);
- 
-app.get("/", (req, res) => {
- res.sendFile(__dirname+"/index.html")
+const channelId = process.env.CHANNEL_ID;
+
+const client = new Client({
+    intents: [
+        GatewayIntentBits.Guilds
+    ],
 });
+ 
+// Info jika gagal login
+try {
+    client.login(process.env.TOKEN);
+} catch (error) {
+    console.error(`Gagal masuk menggunakan Discord.js: ${error.message}`);
+}
+
+app.use(express.static(path.join(__dirname, "public")));
 
 app.post("/", async (req, res) => {
  if (req.headers["get-link"] == "true") {

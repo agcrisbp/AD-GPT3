@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>AD-GPT Support Server</title>
+
+<head>
+    <meta property="og:image" content="logo.png">
+    <meta name="description" content="You've been invited to AD-GPT Support server.">
+    <meta name="viewport" content="width=device-width">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@agcrisbp">
+    <meta name="twitter:site" content="@agcrisbp">
+    <meta name="twitter:title" content="AD-GPT Support Server">
+    <meta name="twitter:description" content="You've been invited to AD-GPT Support Server.">
+    <meta name="twitter:image:src" content="logo.png">
+    <meta name="twitter:image:width" content="280">
+    <meta name="twitter:image:height" content="150">
+    <meta name="keywords" content="discord, server, discord server">
+    <meta name="author" content="Aghea">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+
+  <body>
+    <main class="main">
+      <div class="background">
+        <div class="inner inner-1"></div>
+        <div class="inner inner-2"></div>
+        <div class="inner inner-3"></div>
+        <div class="inner inner-4"></div>
+        <div class="inner inner-5"></div>
+        <div class="inner inner-6"></div>
+        <div class="inner inner-7"></div>
+        <div class="inner inner-8"></div>
+        <div class="inner inner-9"></div>
+        <div class="inner inner-10"></div>
+        <div class="inner inner-11"></div>
+        <div class="inner inner-12"></div>
+        <div class="inner inner-13"></div>
+      </div>
+      <div class="overlay">
+        <div id="inviteContainer">
+          <div class="logoContainer">
+            <img class="logo" src="logo.png" />
+            <h1 class="text">AD-GPT<br />Support</h1>
+          </div>
+          <div class="acceptContainer">
+            <div class="divForm">
+              <h1>YOU'VE BEEN INVITED TO JOIN</h1>
+              <div class="serverInfo">
+                <h2>
+                  <span class="server">AD-GPT Support Server</span><br /><span class="by"
+                    >by </span
+                  ><span class="name">Constantinople#3970</span>
+                </h2>
+              </div>
+              <p id="loading"><button class="acceptBtn" id="btn">Accept Invitation</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  
+<script>
+  var btn = document.getElementById("btn");
+			btn.addEventListener("click",() => {
+				document.querySelector("#loading").style.display = "block";
+				btn.style.display = "none";
+				const xhttp = new XMLHttpRequest();
+				xhttp.onload = function() {
+					window.location= this.responseText
+				}
+				xhttp.open("POST", "/");
+				xhttp.setRequestHeader("get-link","true");
+				xhttp.send();
+});
+</script>
+</html>

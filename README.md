@@ -1,42 +1,72 @@
-## OTBot
-<h2>🤖 Description</h2>
+<center><img src="public/sign.png" /></center>
 
-One-Time Invite Link Generator For Your Discord Server With A Web Page.
+<center>
+    <h4>One-Time Invite Link Generator For Your Discord Server With A Web Page</h4>
+</center>
 
-<h2>⭐ Please Star The Repository</h2>
-Please star to make the repository stand out 🙏.
+<a href="https://www.buymeacoffee.com/agcrisbp" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 32px !important;width: 114px !important;" ></a>
+<a href="https://saweria.co/agcrisbp" target="_blank"><img src="https://bio.aghea.site/saweria-button.png" alt="Saweria" style="height: 30px !important;width: 114px !important;" ></a>
+<a href="https://github.com/sponsors/agcrisbp" target="_blank"><img src="public/sponsor-badge.svg" alt="Github Sponsor" style="height: 30px !important;width: 114px !important;" ></a>
 
-<h2>💥 Installation</h2>
+---
 
-<h4>You need Nodejs in your computer.</h4>
+## Live Demo:
 
-<pre>git clone https://github.com/0xe2d0/OTBot</pre>
-<pre>npm install</pre>
+You can check [AD-GPT Support Server Invitation](https://aghea.fly.dev).
 
-<h2>😎 Usage</h2>
+---
 
-<ul>
-<li>First, you need a discord bot. You can create <a href="https://discord.com/developers/">this link</a> </li>
-<li>Secondly, paste your bot's token into the token section in the config.json file.</li>
-<li>Then, you invite the bot your server. </li>
-<li>Finally, you can execute this command on the terminal.<pre>node main.js</pre>
-<li>So your bot is up💥</li>
-</ul>
+## Configuration:
 
-<h2>☘️ Customizing</h2>
+- Go to your `Server Settings > Widget > Copy JSON API`.
 
-<h4>Custom port</h4>
-• If you change the site port . You can change the port section in the config.json file for custom port. Value type is number  . Default 1337.
+![Widget](public/widget.png)
 
-<h4>Custom max link usage timeframe</h4>
-• If you change the maximum link usage timeframe , you can change the max-age section in the config.json file. Value type is second . Default 1 hour.
+- Go to [script.js](public/script.js) and replace _"https://discord.com/api/guilds/1198288601696440350/widget.json"_ with the link you just copied.
 
-<h4> Custom max link usage</h4>
-• If you change the maximum link usage , you can change the max-uses section in config.json file. Value type is number. Default 1.
+- Edit lines of **index.html** in `<head>` section with your server data.
 
-<h4> Custom template</h4>
-• You edit the index.html file for custom template.
+- Edit `app = "YourAppName"` in [fly.toml](fly.toml).
 
-<h4>If everything is ok..</h4>
-You go to the http://localhost:1337/ and see the magic 🤠.
+- Setup the `.env.example` and rename it to `.env`.
 
+---
+
+## Deploy To https://fly.dev
+
+- Install the flyctl package:
+
+```bash
+npm Install -g flyctl
+```
+
+- Setup fly app:
+
+```bash
+flyctl launch
+```
+
+```bash
+? Would you like to copy its configuration to the new app? Yes
+```
+
+```bash
+? Do you want to tweak these settings before proceeding? Yes
+```
+
+- Set the app name based on your [fly.toml](fly.toml).
+
+- Deploy:
+
+```bash
+flyctl deploy
+```
+
+> Next time you want to redeploy your web after editing something, just use `flyctl deploy`.
+
+---
+
+#### Credit:
+
+- [0xe2d0](https://github.com/0xe2d0).
+- [Ed0ardo](https://github.com/Ed0ardo).
