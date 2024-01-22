@@ -12,7 +12,7 @@
 
 ## Live Demo:
 
-You can check [AD-GPT Support Server Invitation](https://aghea.fly.dev).
+You can check [WEST GAME 卍 Server](https://west.fly.dev).
 
 ---
 
@@ -32,7 +32,7 @@ You can check [AD-GPT Support Server Invitation](https://aghea.fly.dev).
 
 ---
 
-## Deploy To https://fly.dev
+## Deploy To https://fly.io
 
 - Install the flyctl package:
 
