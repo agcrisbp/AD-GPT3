@@ -39,6 +39,12 @@ You can check [WEST GAME 卍 Server](https://west.fly.dev).
 - Setup fly app:
 
 ```bash
+flyctl auth login
+```
+
+- Launch the app:
+
+```bash
 flyctl launch
 ```
 
