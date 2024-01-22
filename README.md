@@ -34,11 +34,7 @@ You can check [WEST GAME 卍 Server](https://west.fly.dev).
 
 ## Deploy To https://fly.io
 
-- Install the flyctl package:
-
-```bash
-npm Install -g flyctl
-```
+- Install the flyctl package: [Install flyctl](https://fly.io/docs/hands-on/install-flyctl/).
 
 - Setup fly app:
 
