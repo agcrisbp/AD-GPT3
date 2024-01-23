@@ -89,8 +89,6 @@ node bot.js
 
 - Edit lines of **index.html** in `<head>` section with your server data.
 
-- Edit `app = "YourAppName"` in [fly.toml](fly.toml).
-
 - Setup the `.env.example` and rename it to `.env`.
 
 ---
@@ -119,7 +117,7 @@ flyctl launch
 ? Do you want to tweak these settings before proceeding? Yes
 ```
 
-- Set the app name based on your [fly.toml](fly.toml).
+- Set the app name based on your `app = "YourAppName"` in [fly.toml](fly.toml).
 
 - Deploy:
 
