@@ -1,3 +1,4 @@
 .env
 .git
 node_modules/
+gpt_3.log
