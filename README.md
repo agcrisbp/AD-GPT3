@@ -1,12 +1,19 @@
-<center><img src="public/sign.png" /></center>
+<center><img src="public/sign.png" />
+
+<p align="center">
+    <img alt='GitHub Clones' src='https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://gist.githubusercontent.com/agcrisbp/32d40c9a3c1c180d1a3f1719330ec7a4/raw/clone.json&logo=github'>
+    <img alt='GitHub Clones' src='https://img.shields.io/badge/dynamic/json?color=success&label=Unique&query=uniques&url=https://gist.githubusercontent.com/agcrisbp/32d40c9a3c1c180d1a3f1719330ec7a4/raw/clone.json&logo=githubactions&logoColor=white'>
+</p>
 
 <center>
     <h4>One-Time invite link generator for your Discord server with webpage, which supports Discord AI chatbot powered by OpenAI language model called GPT-3.5.</h4>
 </center>
 
+<center>
 <a href="https://www.buymeacoffee.com/agcrisbp" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 32px !important;width: 114px !important;" ></a>
 <a href="https://saweria.co/agcrisbp" target="_blank"><img src="https://bio.aghea.site/saweria-button.png" alt="Saweria" style="height: 30px !important;width: 114px !important;" ></a>
 <a href="https://github.com/sponsors/agcrisbp" target="_blank"><img src="public/sponsor-badge.svg" alt="Github Sponsor" style="height: 30px !important;width: 114px !important;" ></a>
+</center>
 
 ---
 
