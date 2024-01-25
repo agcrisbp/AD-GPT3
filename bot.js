@@ -268,25 +268,6 @@ client.on('guildMemberAdd', async member => {
     }
 });
 
-client.once('ready', async () => {
-    const serverId = process.env.SERVER_ID;
-    let serverName = "Unknown Server";
-
-    try {
-        const server = await client.guilds.fetch(serverId);
-        serverName = server ? server.name : serverName;
-    } catch (error) {
-        console.error(`Failed to fetch server information: ${error.message}`);
-    }
-
-    client.user.setPresence({
-        activities: [{ name: `${serverName}`, type: 3 }],
-        status: 'online'
-    });
-
-    console.log(`Logged in as ${client.user.tag} in server: ${serverName}`.green);
-});
-
 // Pencegahan Crash
 process.on('unhandledRejection', async (err, cause) => {
     console.log(`[Uncaught Rejection]: ${err}`.bold.red);
