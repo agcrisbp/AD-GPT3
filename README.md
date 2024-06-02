@@ -19,7 +19,7 @@
 
 ## Live Demo:
 
-You can check [WEST GAME 卍 Server](https://west.fly.dev).
+You can check [WEST GAME 卍 Server](https://west.vercel.app/).
 
 ---
 
